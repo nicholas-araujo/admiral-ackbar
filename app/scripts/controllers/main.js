@@ -18,4 +18,9 @@ angular.module('admiralAckbarApp')
       'Item 3',
       'Item 4'
     ];
+    
+    $scope.addTodo = function () {
+      $scope.todos.push($scope.todo);
+      $scope.todo = '';
+    };
   });
